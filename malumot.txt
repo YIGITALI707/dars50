@@ -1,0 +1,1 @@
+{"ism": "yigitali", "familiya": "soliyev", "adres": "buvayda", "telefon": "9988887009448", "yosh": "26"}

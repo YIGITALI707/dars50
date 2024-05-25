@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/eel.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(238, 238, 238);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form{
+            width: 400px;
+            /* height: 400px; */
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            padding: 20px;
+        }
+        label,input{
+            display: block;
+            width: 100%;
+            margin: 10px 0px;
+        }
+        input{
+            padding: 10px;
+            border: 1
+        }
+        button{
+           
+            margin: 10px 0px;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #fff;
+            font-size: 18px;
+            background-color: rgb(58, 219, 128);
+        }
+    </style>
+</head>
+<body>
+
+   <div class="form">
+    <form action="">
+        
+        <div class="control">
+            <label for="">Ism</label>
+            <input type="text" id="name">
+        </div>
+
+        <div class="control">
+            <label for="">Familya</label>
+            <input type="text" id="surname">
+        </div>
+
+
+        <div class="control">
+            <label for="">Telefon</label>
+            <input type="text" id="phone">
+        </div>
+
+        <div class="control">
+           
+           <button type="button">Saqlash</button>
+        </div>
+
+
+    </form>
+   </div>
+
+   <script>
+    document.querySelector('button').addEventListener('click', function(){
+        let name = document.getElementById('name').value;
+        let surname = document.getElementById('surname').value;
+        let phone = document.getElementById('phone').value;
+      
+        eel.add_user(name, surname, phone)(function(res){
+        alert(res);
+        
+       });
+
+    });
+   </script>
+    
+</body>
+</html>
