@@ -1,0 +1,1 @@
+def txt_fayl_ochuvchi():
