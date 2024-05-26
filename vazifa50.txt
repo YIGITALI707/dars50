@@ -1,0 +1,5 @@
+a=[shaftoli,uzum,mashina,uy,olma]
+
+
+
+
